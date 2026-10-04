@@ -20,21 +20,66 @@ export function SiteFooter() {
             </span>
             <span className="leading-tight">
               <span className="block font-display text-md font-bold text-navy-foreground">
-                Darul-ilm Kent
+                Darul-ilm Community
               </span>
               <span className="block font-display text-sm italic text-accent">
                 House of Knowledge
               </span>
             </span>
           </div>
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-foreground/80 text-justify">
-            An established Islamic educational institute that is keen to deliver a high standard of
-            Islamic education to the entire Medway community and create a society founded upon
-            Islamic knowledge and values.
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-foreground/80">
+            Learned in the classroom. Lived in the community. Serving Medway through faith, welfare
+            and outreach.
           </p>
         </div>
         <div>
-          <h3 className="font-display text-xl uppercase tracking-wide">Explore</h3>
+          <h3 className="font-display text-xl uppercase tracking-wide">Our Work</h3>
+          <ul className="mt-3 space-y-2 text-sm text-navy-foreground/85">
+            <li>
+              <Link className="hover:text-accent" to="/halaqas">
+                Spirituality
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/madrasa">
+                Education
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/zakat">
+                Medway Zakat Fund
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/food-bank">
+                CHM Food Bank
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/family-support">
+                Family &amp; Marriage Support
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/dawah">
+                Da&apos;wah
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/media">
+                Media
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/youth">
+                Youth &amp; Children
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-display text-xl uppercase tracking-wide">Get Involved</h3>
           <ul className="mt-3 space-y-2 text-sm text-navy-foreground/85">
             <li>
               <Link className="hover:text-accent" to="/about">
@@ -42,49 +87,39 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-accent" to="/chatham">
-                Chatham School
+              <Link className="hover:text-accent" to="/events">
+                Events
               </Link>
             </li>
             <li>
-              <Link className="hover:text-accent" to="/gillingham">
-                Gillingham School
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-accent" to="/team">
-                The Darul-ilm team
-              </Link>
-            </li>
-            <li>
-              <a className="hover:text-accent" href="/policies">
-                Our Policies
+              <a className="hover:text-accent" href="/get-involved#volunteer">
+                Volunteer
               </a>
             </li>
             <li>
-              <a className="hover:text-accent" href="/contact">
+              <Link className="hover:text-accent" to="/donate">
+                Donate
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/zakat">
+                Give Zakat
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/food-bank">
+                Get Support
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/blog">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-accent" to="/contact">
                 Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="font-display text-xl uppercase tracking-wide">Our Sites</h3>
-          <ul className="mt-3 space-y-2 text-sm text-navy-foreground/85">
-            <li>
-              Chatham Hill Mosque
-              <br />
-              22A Chatham Hill, Chatham
-              <br />
-              ME5 7AA
-            </li>
-            <li className="mt-6">
-              Gillingham — KMWA Mosque
-              <br />
-              114 Canterbury St, Gillingham
-              <br />
-              ME7 5UH
+              </Link>
             </li>
           </ul>
         </div>
@@ -93,7 +128,12 @@ export function SiteFooter() {
           <h3 className="font-display text-xl uppercase tracking-wide">Contact</h3>
           <ul className="mt-3 space-y-2 text-sm text-navy-foreground/85">
             <li>
-              Imam Didar:{" "}
+              Chatham Hill Mosque
+              <br />
+              22A Chatham Hill, Chatham ME5 7AA
+            </li>
+            <li>
+              Mufti Didar Hasan (Chair):{" "}
               <a className="hover:text-accent" href="tel:07534979369">
                 07534 979369
               </a>
@@ -138,8 +178,20 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="relative border-t border-navy-foreground/15 py-5 text-center text-xs text-navy-foreground/70">
-        © 2026 Darul-ilm Kent. All rights reserved.
+      <div className="relative flex flex-wrap items-center justify-center gap-x-5 gap-y-2 border-t border-navy-foreground/15 px-6 py-5 text-center text-xs text-navy-foreground/70">
+        <span>© 2026 Darul-ilm Community, part of Darul-ilm Kent</span>
+        <a className="hover:text-accent" href="https://school.darulilmkent.org">
+          Madrasa website
+        </a>
+        <Link className="hover:text-accent" to="/policies">
+          Our Policies
+        </Link>
+        <Link className="hover:text-accent" to="/privacy">
+          Privacy notice
+        </Link>
+        <a className="hover:text-accent" href="/documents/Safeguarding%20Policy.pdf">
+          Safeguarding
+        </a>
       </div>
     </footer>
   );

@@ -12,11 +12,21 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogRouteImport } from './routes/blog'
-import { Route as ChathamRouteImport } from './routes/chatham'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as GillinghamRouteImport } from './routes/gillingham'
+import { Route as DawahRouteImport } from './routes/dawah'
+import { Route as DonateRouteImport } from './routes/donate'
+import { Route as EventsRouteImport } from './routes/events'
+import { Route as FamilySupportRouteImport } from './routes/family-support'
+import { Route as FoodBankRouteImport } from './routes/food-bank'
+import { Route as GetInvolvedRouteImport } from './routes/get-involved'
+import { Route as HalaqasRouteImport } from './routes/halaqas'
+import { Route as MadrasaRouteImport } from './routes/madrasa'
+import { Route as MediaRouteImport } from './routes/media'
 import { Route as PoliciesRouteImport } from './routes/policies'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as TeamRouteImport } from './routes/team'
+import { Route as YouthRouteImport } from './routes/youth'
+import { Route as ZakatRouteImport } from './routes/zakat'
 import { Route as BlogIndexRouteImport } from './routes/blog/index'
 import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
 
@@ -35,19 +45,54 @@ const BlogRoute = BlogRouteImport.update({
   path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ChathamRoute = ChathamRouteImport.update({
-  id: '/chatham',
-  path: '/chatham',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GillinghamRoute = GillinghamRouteImport.update({
-  id: '/gillingham',
-  path: '/gillingham',
+const DawahRoute = DawahRouteImport.update({
+  id: '/dawah',
+  path: '/dawah',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DonateRoute = DonateRouteImport.update({
+  id: '/donate',
+  path: '/donate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FamilySupportRoute = FamilySupportRouteImport.update({
+  id: '/family-support',
+  path: '/family-support',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FoodBankRoute = FoodBankRouteImport.update({
+  id: '/food-bank',
+  path: '/food-bank',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GetInvolvedRoute = GetInvolvedRouteImport.update({
+  id: '/get-involved',
+  path: '/get-involved',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HalaqasRoute = HalaqasRouteImport.update({
+  id: '/halaqas',
+  path: '/halaqas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MadrasaRoute = MadrasaRouteImport.update({
+  id: '/madrasa',
+  path: '/madrasa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaRoute = MediaRouteImport.update({
+  id: '/media',
+  path: '/media',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PoliciesRoute = PoliciesRouteImport.update({
@@ -55,9 +100,24 @@ const PoliciesRoute = PoliciesRouteImport.update({
   path: '/policies',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TeamRoute = TeamRouteImport.update({
   id: '/team',
   path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const YouthRoute = YouthRouteImport.update({
+  id: '/youth',
+  path: '/youth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZakatRoute = ZakatRouteImport.update({
+  id: '/zakat',
+  path: '/zakat',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
@@ -75,22 +135,42 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRouteWithChildren
-  '/chatham': typeof ChathamRoute
   '/contact': typeof ContactRoute
-  '/gillingham': typeof GillinghamRoute
+  '/dawah': typeof DawahRoute
+  '/donate': typeof DonateRoute
+  '/events': typeof EventsRoute
+  '/family-support': typeof FamilySupportRoute
+  '/food-bank': typeof FoodBankRoute
+  '/get-involved': typeof GetInvolvedRoute
+  '/halaqas': typeof HalaqasRoute
+  '/madrasa': typeof MadrasaRoute
+  '/media': typeof MediaRoute
   '/policies': typeof PoliciesRoute
+  '/privacy': typeof PrivacyRoute
   '/team': typeof TeamRoute
+  '/youth': typeof YouthRoute
+  '/zakat': typeof ZakatRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/chatham': typeof ChathamRoute
   '/contact': typeof ContactRoute
-  '/gillingham': typeof GillinghamRoute
+  '/dawah': typeof DawahRoute
+  '/donate': typeof DonateRoute
+  '/events': typeof EventsRoute
+  '/family-support': typeof FamilySupportRoute
+  '/food-bank': typeof FoodBankRoute
+  '/get-involved': typeof GetInvolvedRoute
+  '/halaqas': typeof HalaqasRoute
+  '/madrasa': typeof MadrasaRoute
+  '/media': typeof MediaRoute
   '/policies': typeof PoliciesRoute
+  '/privacy': typeof PrivacyRoute
   '/team': typeof TeamRoute
+  '/youth': typeof YouthRoute
+  '/zakat': typeof ZakatRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog': typeof BlogIndexRoute
 }
@@ -99,11 +179,21 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRouteWithChildren
-  '/chatham': typeof ChathamRoute
   '/contact': typeof ContactRoute
-  '/gillingham': typeof GillinghamRoute
+  '/dawah': typeof DawahRoute
+  '/donate': typeof DonateRoute
+  '/events': typeof EventsRoute
+  '/family-support': typeof FamilySupportRoute
+  '/food-bank': typeof FoodBankRoute
+  '/get-involved': typeof GetInvolvedRoute
+  '/halaqas': typeof HalaqasRoute
+  '/madrasa': typeof MadrasaRoute
+  '/media': typeof MediaRoute
   '/policies': typeof PoliciesRoute
+  '/privacy': typeof PrivacyRoute
   '/team': typeof TeamRoute
+  '/youth': typeof YouthRoute
+  '/zakat': typeof ZakatRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
@@ -113,22 +203,42 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
-    | '/chatham'
     | '/contact'
-    | '/gillingham'
+    | '/dawah'
+    | '/donate'
+    | '/events'
+    | '/family-support'
+    | '/food-bank'
+    | '/get-involved'
+    | '/halaqas'
+    | '/madrasa'
+    | '/media'
     | '/policies'
+    | '/privacy'
     | '/team'
+    | '/youth'
+    | '/zakat'
     | '/blog/$slug'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/chatham'
     | '/contact'
-    | '/gillingham'
+    | '/dawah'
+    | '/donate'
+    | '/events'
+    | '/family-support'
+    | '/food-bank'
+    | '/get-involved'
+    | '/halaqas'
+    | '/madrasa'
+    | '/media'
     | '/policies'
+    | '/privacy'
     | '/team'
+    | '/youth'
+    | '/zakat'
     | '/blog/$slug'
     | '/blog'
   id:
@@ -136,11 +246,21 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
-    | '/chatham'
     | '/contact'
-    | '/gillingham'
+    | '/dawah'
+    | '/donate'
+    | '/events'
+    | '/family-support'
+    | '/food-bank'
+    | '/get-involved'
+    | '/halaqas'
+    | '/madrasa'
+    | '/media'
     | '/policies'
+    | '/privacy'
     | '/team'
+    | '/youth'
+    | '/zakat'
     | '/blog/$slug'
     | '/blog/'
   fileRoutesById: FileRoutesById
@@ -149,11 +269,21 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRouteWithChildren
-  ChathamRoute: typeof ChathamRoute
   ContactRoute: typeof ContactRoute
-  GillinghamRoute: typeof GillinghamRoute
+  DawahRoute: typeof DawahRoute
+  DonateRoute: typeof DonateRoute
+  EventsRoute: typeof EventsRoute
+  FamilySupportRoute: typeof FamilySupportRoute
+  FoodBankRoute: typeof FoodBankRoute
+  GetInvolvedRoute: typeof GetInvolvedRoute
+  HalaqasRoute: typeof HalaqasRoute
+  MadrasaRoute: typeof MadrasaRoute
+  MediaRoute: typeof MediaRoute
   PoliciesRoute: typeof PoliciesRoute
+  PrivacyRoute: typeof PrivacyRoute
   TeamRoute: typeof TeamRoute
+  YouthRoute: typeof YouthRoute
+  ZakatRoute: typeof ZakatRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -179,13 +309,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/chatham': {
-      id: '/chatham'
-      path: '/chatham'
-      fullPath: '/chatham'
-      preLoaderRoute: typeof ChathamRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -193,11 +316,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/gillingham': {
-      id: '/gillingham'
-      path: '/gillingham'
-      fullPath: '/gillingham'
-      preLoaderRoute: typeof GillinghamRouteImport
+    '/dawah': {
+      id: '/dawah'
+      path: '/dawah'
+      fullPath: '/dawah'
+      preLoaderRoute: typeof DawahRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/donate': {
+      id: '/donate'
+      path: '/donate'
+      fullPath: '/donate'
+      preLoaderRoute: typeof DonateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/family-support': {
+      id: '/family-support'
+      path: '/family-support'
+      fullPath: '/family-support'
+      preLoaderRoute: typeof FamilySupportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/food-bank': {
+      id: '/food-bank'
+      path: '/food-bank'
+      fullPath: '/food-bank'
+      preLoaderRoute: typeof FoodBankRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/get-involved': {
+      id: '/get-involved'
+      path: '/get-involved'
+      fullPath: '/get-involved'
+      preLoaderRoute: typeof GetInvolvedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/halaqas': {
+      id: '/halaqas'
+      path: '/halaqas'
+      fullPath: '/halaqas'
+      preLoaderRoute: typeof HalaqasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/madrasa': {
+      id: '/madrasa'
+      path: '/madrasa'
+      fullPath: '/madrasa'
+      preLoaderRoute: typeof MadrasaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media': {
+      id: '/media'
+      path: '/media'
+      fullPath: '/media'
+      preLoaderRoute: typeof MediaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/policies': {
@@ -207,11 +386,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PoliciesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/team': {
       id: '/team'
       path: '/team'
       fullPath: '/team'
       preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/youth': {
+      id: '/youth'
+      path: '/youth'
+      fullPath: '/youth'
+      preLoaderRoute: typeof YouthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zakat': {
+      id: '/zakat'
+      path: '/zakat'
+      fullPath: '/zakat'
+      preLoaderRoute: typeof ZakatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -247,11 +447,21 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BlogRoute: BlogRouteWithChildren,
-  ChathamRoute: ChathamRoute,
   ContactRoute: ContactRoute,
-  GillinghamRoute: GillinghamRoute,
+  DawahRoute: DawahRoute,
+  DonateRoute: DonateRoute,
+  EventsRoute: EventsRoute,
+  FamilySupportRoute: FamilySupportRoute,
+  FoodBankRoute: FoodBankRoute,
+  GetInvolvedRoute: GetInvolvedRoute,
+  HalaqasRoute: HalaqasRoute,
+  MadrasaRoute: MadrasaRoute,
+  MediaRoute: MediaRoute,
   PoliciesRoute: PoliciesRoute,
+  PrivacyRoute: PrivacyRoute,
   TeamRoute: TeamRoute,
+  YouthRoute: YouthRoute,
+  ZakatRoute: ZakatRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

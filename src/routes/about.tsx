@@ -2,16 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { PageBanner } from "@/components/page-banner";
 import bannerImage from "@/assets/darul-ilm-stock-photo-4.jpg";
 import { seoHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
   head: () =>
     seoHead({
-      title: "About Us | Darul-ilm Kent",
+      title: "Who We Are | Darul-ilm Community",
       description:
-        "Learn about Darul-ilm Kent, our history from five children in 2017 to two sites across Medway, and our values.",
+        "Learn how Darul-ilm grew from a Chatham madrasa into a community serving Medway through faith, welfare and outreach.",
       path: "/about",
     }),
   component: About,
@@ -76,7 +75,7 @@ function About() {
                 textShadow: "0 2px 10px rgba(0,0,0,0.8)",
               }}
             >
-              Our Story
+              About Darul-ilm Community
             </p>
 
             <h1
@@ -95,7 +94,7 @@ function About() {
                 textShadow: "0 4px 10px rgba(0,0,0,0.9), 0 8px 30px rgba(0,0,0,0.55)",
               }}
             >
-              About Us
+              Who we are
             </h1>
 
             {/* Accent line */}
@@ -119,79 +118,61 @@ function About() {
                 textShadow: "0 2px 6px rgba(0,0,0,0.9), 0 5px 18px rgba(0,0,0,0.45)",
               }}
             >
-              Raising the Next Generation. Nurturing Hearts and Minds.
+              A place to belong, grow spiritually and give back.
             </p>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="heading-lg rule-accent text-primary">Our Vision</h2>
-        <p className="mt-3 text-muted-foreground">
-          A generation of children who know their Dīn with clarity, love Allah and His Messenger ﷺ
-          with sincerity, and live their lives by taqwā.
+        <h2 className="heading-lg rule-accent text-primary">A place to belong</h2>
+        <p className="mt-4 max-w-6xl text-lg leading-8 text-muted-foreground">
+          Darul-ilm Community grew out of something simple: a madrasa that kept growing, and
+          families who wanted more than lessons. They wanted a place to belong, to grow spiritually
+          and to give back.
         </p>
 
-        <h2 className="heading-lg rule-accent mt-12 text-primary">Our Mission</h2>
-        <p className="mt-3 text-muted-foreground">
-          Darul-Ilm exists to build children on a complete foundation of knowledge and love for
-          Allah and His Messenger ﷺ, so that the two become one and the same. We measure success not
-          only by what a child has memorised, but also by what they come to know, love, and give -
-          guiding as many as possible toward ḥifẓ, service of the Dīn, and a life shaped by taqwā.
-        </p>
-
-        <h2 className="heading-lg rule-accent mt-12 text-primary">Our Philosophy</h2>
-        <p className="mt-3 text-muted-foreground">
-          Every child who walks through our doors deserves more than information — they deserve a
-          foundation. That means Qurʾān recited with excellence, essential duʿās held in the heart,
-          and clear understanding of ʿAqīdah, Fiqh, Tārīkh, Ḥadīth, Sīrah, Akhlāq and Adab. We give
-          children the confidence to stand, speak, and recite in front of others, and the taqwā to
-          carry what they learn into how they live.
-        </p>
-        <p className="mt-4 text-muted-foreground">
-          As our most capable students grow, we bring them into serving the Dīn — volunteering,
-          assisting in classes, and teaching those younger than them — so that it becomes the
-          natural next step after learning it. Beyond the classroom, we build a genuine community
-          among our young people — through activities, events, and sport — so that faith is lived
-          together, not just studied alone. From this foundation, we aim to guide as many as
-          possible toward ḥifẓ of the full Qurʾān, onward into the Sanatayn programme, and — for
-          those Allah wills it for — into becoming scholars who will carry this Ummah after us.
-        </p>
-
-        <h2 className="heading-lg rule-accent mt-12 text-primary">Our core values</h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              title: "1. Knowledge Taught with Excellence",
-              body: "Every subject — ʿAqīdah, Fiqh, Tārīkh, Ḥadīth, Sīrah, Akhlāq, Adab — is taught properly and thoroughly, not rushed or watered down.",
-            },
-            {
-              title: "2. Heart Before Ḥifẓ",
-              body: "We do not measure success by what a child has memorised, but by what they have come to love. A student who completes ḥifẓ without loving what they’ve memorised hasn’t finished the job.",
-            },
-            {
-              title: "3. Taqwā as a Way of Life",
-              body: "Consciousness of Allah is not a lesson on the timetable — it’s how a child is expected to carry themselves in and out of the classroom.",
-            },
-            {
-              title: "4. Service is Earned, Then Expected",
-              body: "Our most capable students are brought into khidmah — volunteering, assisting in classes, and teaching those younger than them — because service is a natural next step after learning, not an afterthought.",
-            },
-            {
-              title: "5. No Child is Left Behind",
-              body: "Whether a child is destined for ḥifẓ and scholarship or simply needs the foundations of their Dīn secured, every child’s progress is watched and nurtured individually.",
-            },
-            {
-              title: "6. The Home Grows With the Child",
-              body: "A child’s Dīn is built jointly between the madrasa and the home — we work with parents, not around them.",
-            },
-          ].map((value) => (
-            <article key={value.title} className="panel-card p-6">
-              <h3 className="font-display text-2xl uppercase text-primary">{value.title}</h3>
-              <p className="mt-3 text-sm text-muted-foreground">{value.body}</p>
-            </article>
-          ))}
+        <h2 className="heading-lg rule-accent mt-12 text-primary">Our story</h2>
+        <div className="mt-4 max-w-6xl space-y-4 leading-7 text-muted-foreground">
+          <p>
+            Darul-ilm began in 2017 in a family home in Chatham with three students. Within two
+            years, eighty children were learning in every room except the kitchen. In 2019 we moved
+            to a bigger home and grew to 120 students, with classes in the hallway and kitchen too.
+          </p>
+          <p>
+            In 2022 we moved into Chatham Hill Masjid and grew past 200 students. Today more than
+            300 children learn with us each week.
+          </p>
+          <p>
+            Along the way, our work stretched beyond the classroom: adult classes, a weekly
+            spirituality halaqa, youth retreats and da&apos;wah training. Darul-ilm Community brings
+            this work together and takes it further, into outreach, media and service to everyone.
+          </p>
         </div>
+
+        <h2 className="heading-lg rule-accent mt-12 text-primary">What drives us</h2>
+        <p className="mt-4 max-w-6xl leading-7 text-muted-foreground">
+          Everything we do follows one arc: know, love, live by taqwā. We want people to truly know
+          their Dīn, to love Allah and His Messenger ﷺ, and to live in a way that shows it. For us,
+          living by taqwā means being useful to people: feeding the hungry, keeping the lonely
+          company, keeping our streets clean and being the best of neighbours.
+        </p>
+
+        <h2 className="heading-lg rule-accent mt-12 text-primary">For everyone</h2>
+        <p className="mt-4 max-w-6xl leading-7 text-muted-foreground">
+          Our community work is open to all. Our soup kitchen will not ask who you are, our litter
+          picks clean streets we all share, and our doors are open to anyone curious about Islam or
+          simply wanting to meet their Muslim neighbours.
+        </p>
+
+        <h2 id="who-leads-us" className="heading-lg rule-accent mt-12 text-primary">
+          Who leads us
+        </h2>
+        <p className="mt-4 max-w-6xl leading-7 text-muted-foreground">
+          Darul-ilm was founded by Mufti Didar Hasan, who serves as Chair. Our work is carried by a
+          growing team of volunteers, brothers and sisters, each looking after an area they care
+          about.
+        </p>
 
         {/* <img
           src={classroom}

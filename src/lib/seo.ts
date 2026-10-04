@@ -1,4 +1,4 @@
-const configuredSiteUrl = import.meta.env.VITE_SITE_URL || "https://darulilmchatham.com";
+const configuredSiteUrl = import.meta.env.VITE_SITE_URL || "https://school.darulilmkent.org";
 
 export const siteUrl = configuredSiteUrl.replace(/\/$/, "");
 
@@ -34,11 +34,11 @@ export function seoHead({ title, description, path }: SeoOptions) {
 export const organisationSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
-  name: "Darul-ilm Kent",
+  name: "Darul-ilm Community",
   url: siteUrl,
   logo: absoluteUrl("/favicon.png"),
   description:
-    "Darul-ilm Kent is an Islamic educational institute offering Qur'an and Islamic studies classes for children across Medway.",
+    "Darul-ilm Community connects families across Medway with education, welfare, food support and spiritual gatherings.",
   email: "mailto:Info@darulilmchatham.com",
   sameAs: [
     "https://www.youtube.com/@darul-ilmchatham4240",

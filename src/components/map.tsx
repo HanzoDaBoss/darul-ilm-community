@@ -8,14 +8,8 @@ export default function MapComponent() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
       />
-      {/* First Marker */}
       <Marker position={[51.37839612767821, 0.5357665576437021]}>
         <Popup>Chatham Hill Mosque</Popup>
-      </Marker>
-
-      {/* Second Marker (Adjust these coordinates) */}
-      <Marker position={[51.384265280599585, 0.5447370855572228]}>
-        <Popup>Gillingham KMWA</Popup>
       </Marker>
     </MapContainer>
   );

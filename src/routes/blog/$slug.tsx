@@ -106,7 +106,7 @@ function BlogPost() {
 
   if (!post) {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen blog-route">
         <SiteHeader />
         <main className="mx-auto max-w-3xl px-6 py-24 text-center">
           <p className="eyebrow">Blog</p>
@@ -124,7 +124,7 @@ function BlogPost() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen blog-route">
       <SiteHeader />
       <main>
         <article className="mx-auto max-w-4xl px-6 py-14 md:py-20">

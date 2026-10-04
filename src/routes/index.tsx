@@ -2,17 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import quranClass from "@/assets/happy-kids.jpg";
-import classroom from "@/assets/darul-ilm-stock-photo-1.png";
-import { MapPin } from "lucide-react";
+import quranClass from "@/assets/halaqa-food.jpeg";
 import { seoHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   head: () =>
     seoHead({
-      title: "Darul-ilm Kent | Maktab & Madrasa in Kent",
+      title: "Darul-ilm Community | Medway",
       description:
-        "Weekday and weekend madrasah classes for ages 5-16, taught by qualified Islamic scholars across Medway.",
+        "Learned in the classroom. Lived in the community. Serving Medway through faith, welfare and outreach.",
       path: "/",
     }),
   component: Home,
@@ -44,60 +42,47 @@ function Home() {
                   className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary sm:text-base"
                   style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}
                 >
-                  Welcome to
+                  Darul-ilm Community
                 </p>
 
                 <h1 className="font-display text-5xl font-bold uppercase leading-[0.88] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
-                  Darul-ilm
+                  Learned in the classroom.
                   <br />
-                  Kent
+                  Lived in the community.
                 </h1>
 
                 <div className="my-5 h-1 w-14 rounded-full bg-primary" />
 
                 <h2
-                  className="max-w-2xl font-display text-lg font-semibold leading-7 text-white sm:text-xl md:text-2xl lg:text-3xl lg:leading-9"
+                  className="max-w-2xl font-display text-md font-semibold leading-7 text-white sm:text-xl md:text-xl lg:text-2xl lg:leading-9"
                   style={{ textShadow: "0 3px 8px rgba(0,0,0,0.9)" }}
                 >
-                  Raising the Next Generation by
-                  <br />
-                  <span
-                    className="italic font-semibold text-primary"
-                    style={{
-                      textShadow:
-                        "0 2px 3px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,0.95), 0 0 14px rgba(0,0,0,0.85)",
-                    }}
-                  >
-                    Nurturing Hearts and Minds.
-                  </span>
+                  Darul-ilm began as a classroom. Today it is becoming a community, of students,
+                  parents and neighbours working together to serve Medway. There is a place for you
+                  in it.
                 </h2>
 
-                <p
+                {/* <p
                   className="mt-4 max-w-xl text-sm leading-6 text-white sm:text-base sm:leading-7 lg:text-lg lg:leading-8"
                   style={{ textShadow: "0 2px 6px rgba(0,0,0,0.95)" }}
                 >
-                  A weekday and weekend madrasah serving the children of Medway — where children
-                  come to know their Dīn, love Allah and His Messenger ﷺ, and carry taqwā into how
-                  they live, taught with excellence by qualified scholars.
-                </p>
+                  Faith, welfare, outreach and service for our whole community, Muslim and
+                  non-Muslim.
+                </p> */}
 
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <a
-                    href="/chatham#apply"
-                    rel="noreferrer"
+                    href="/get-involved#volunteer"
                     className="btn-pill inline-flex min-h-[50px] items-center justify-center gap-2 px-7 text-base"
                   >
-                    {/* <MapPin className="h-5 w-5" aria-hidden /> */}
-                    Apply at Chatham
+                    Get Involved
                   </a>
 
                   <a
-                    href="/gillingham#apply"
-                    rel="noreferrer"
+                    href="/events"
                     className="btn-pill-ghost inline-flex min-h-[50px] items-center justify-center gap-2 bg-background px-7 text-base"
                   >
-                    {/* <MapPin className="h-5 w-5" aria-hidden /> */}
-                    Apply at Gillingham
+                    What&apos;s On
                   </a>
                 </div>
               </div>
@@ -107,145 +92,167 @@ function Home() {
 
         <section className="band-navy">
           <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-6 py-5 text-center text-sm text-navy-foreground/85">
-            <p>
-              <span className="font-semibold text-accent">Places are limited</span> in most of our
-              current classes — <p className="">Apply above to join our waiting list</p>
-            </p>
-            {/* <span className="hidden text-navy-foreground/30 sm:inline">|</span>
-            <p>
-              New branch now open at{" "}
-              <Link to="/gillingham" className="underline hover:text-accent">
-                KMWA Gillingham
-              </Link>
-              .
-            </p> */}
+            <span className="font-semibold text-accent">Serving Medway since 2017</span>
+            <span className="hidden text-navy-foreground/30 sm:inline">|</span>
+            <span>Based at Chatham Hill Masjid</span>
           </div>
         </section>
       </div>
 
       <section className="mx-auto max-w-6xl px-6 pt-16 welcome-up">
-        <h2 className="heading-lg rule-accent text-navy">Who we are</h2>
-        <p className="mt-4 max-w-6xl text-lg text-muted-foreground text-justify">
-          Darul-Ilm Kent exists to raise children who don't just know their Dīn, but love it. Since
-          opening in 2017 with five students, we've grown into a two-site madrasah serving the
-          children of Medway — teaching Qur'an and Islamic studies with excellence, and nurturing a
-          genuine love for Allah and His Messenger ﷺ that we believe matters just as much as what a
-          child can recite. Today, well over 300 students learn with us, guided by qualified
-          teachers, toward a life shaped by taqwā.
-        </p>
+        <h2 className="heading-lg rule-accent text-navy">More than a madrasa</h2>
+        <div className="mt-4 max-w-6xl space-y-4 text-lg leading-8 text-muted-foreground">
+          <p>
+            Since 2017, Darul-ilm has been teaching the children of Medway to know their Dīn, love
+            Allah and His Messenger ﷺ, and live by taqwā. Living by taqwā never stays inside a
+            classroom. It shows up in how we treat our neighbours, how we look after the lonely and
+            the hungry, and how we carry ourselves in the wider community.
+          </p>
+          <p>
+            Darul-ilm Community is where that happens. It brings together our spirituality
+            programmes, outreach projects, da&apos;wah work and media under one roof, with one aim:
+            the wellbeing of our whole community, Muslim and non-Muslim.
+          </p>
+          <blockquote className="border-l-2 border-accent pl-5 text-primary">
+            <p lang="ar" dir="rtl" className="text-left text-2xl leading-loose">
+              خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ
+            </p>
+            <p className="mt-2 italic">“The best of people are those most beneficial to people.”</p>
+            <cite className="mt-2 block text-sm not-italic text-muted-foreground">
+              Al-Ṭabarānī, al-Muʿjam al-Awsaṭ; graded ḥasan by al-Albānī, Ṣaḥīḥ al-Jāmiʿ no. 3289
+            </cite>
+          </blockquote>
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="heading-lg rule-accent text-primary">What we offer</h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+        <h2 className="heading-lg rule-accent text-primary">How we serve Medway</h2>
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
-              title: "Children's Classes",
-              body: "Weekday and weekend madrasah classes for 5–16 year olds — Monday to Thursday, and Saturday & Sunday.",
-              to: "/chatham" as const,
-              cta: "CHATHAM CLASS TIMES & FEES",
-            },
-            {
-              title: "16+ Programs",
-              body: "Join our Sanatayn programme — a two-year Islamic studies course for students 16 and over.",
-              to: "https://courses.darulilmchatham.com/courses/sanatayn" as const,
-              cta: "PROGRAMME DETAILS",
-            },
-            {
-              title: "Weekly Sessions",
-              body: "Spiritual halaqas every Wednesday at 7:40pm, and brothers' tajweed sessions every Thursday at 7:40pm, at the Chatham Hill Mosque.",
+              title: "Spirituality",
+              body: "The starting point of our community. When our hearts are connected to Allah, everything else follows: good character, service and da'wah.",
               to: "/halaqas" as const,
-              cta: "SESSION DETAILS",
+              cta: "JOIN US",
+            },
+            {
+              title: "Education",
+              body: "Children's Qur'an and Islamic studies, with adult class and Tajweed details being confirmed.",
+              to: "/madrasa" as const,
+              cta: "EXPLORE EDUCATION",
+            },
+            {
+              title: "Medway Zakat Fund",
+              body: "Becoming the zakat hub for Medway: collecting your zakat and passing it on to eligible local families, with dignity and care.",
+              to: "/zakat" as const,
+              cta: "FIND OUT MORE",
+            },
+            {
+              title: "CHM Food Bank",
+              body: "Monthly food parcels for Muslim families going through financial difficulty, so no household faces a hard month alone.",
+              to: "/food-bank" as const,
+              cta: "GET SUPPORT",
+            },
+            {
+              title: "Da'wah",
+              body: "A bridge between Muslims and the wider community, sharing the beauty of Islam through knowledge, information and good character.",
+              to: "/dawah" as const,
+              cta: "DISCOVER ISLAM",
+            },
+            {
+              title: "Media",
+              body: "Content for Muslims and non-Muslims that protects our īmān, defends our faith and shares the message of Islam.",
+              to: "/media" as const,
+              cta: "WATCH OUR CONTENT",
+            },
+            {
+              title: "Family and Marriage Support",
+              body: "Confidential marriage guidance and support through divorce, with premarital courses and parenting programmes on the way.",
+              to: "/family-support" as const,
+              cta: "TALK TO US",
+            },
+            {
+              title: "Youth and Children",
+              body: "Youth clubs, mentoring, sport, trips and leadership, so young Muslims feel the masjid truly belongs to them.",
+              to: "/youth" as const,
+              cta: "FIND OUT MORE",
+              upcoming: true,
             },
           ].map((card) => (
-            <article key={card.title} className="panel-card p-6">
-              <h3 className="font-display text-2xl uppercase text-primary">{card.title}</h3>
+            <article key={card.title} className="panel-card flex flex-col p-6">
+              {card.upcoming && <span className="eyebrow">Coming soon</span>}
+              <h3 className="mt-2 font-display text-xl uppercase text-primary">{card.title}</h3>
               <p className="mt-3 text-sm text-muted-foreground">{card.body}</p>
-              {card.to &&
-                (card.title === "Children's Classes" ? (
-                  <>
-                    {" "}
-                    <a
-                      href="/chatham"
-                      className="mt-4 inline-block font-display text-base uppercase tracking-wide text-accent hover:underline"
-                    >
-                      CHATHAM CLASS TIMES & FEES
-                    </a>{" "}
-                    <a
-                      href="/gillingham"
-                      className="mt-2 inline-block font-display text-base uppercase tracking-wide text-accent hover:underline"
-                    >
-                      GILLINGHAM CLASS TIMES & FEES
-                    </a>
-                  </>
-                ) : (
-                  <a
-                    href={card.to}
-                    className="mt-4 inline-block font-display text-base uppercase tracking-wide text-accent hover:underline"
-                    target={card.title === "16+ Programs" ? "_blank" : ""}
-                  >
-                    {card.cta}
-                  </a>
-                ))}
+              <Link
+                to={card.to}
+                className="mt-auto pt-5 font-display text-base uppercase tracking-wide text-accent hover:underline"
+              >
+                {card.cta}
+              </Link>
             </article>
           ))}
         </div>
       </section>
 
       <section className="bg-sand">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2">
-          <img
-            src={classroom}
-            alt="Madrasah classroom with low wooden desks and bookshelves"
-            width={1600}
-            height={900}
-            loading="lazy"
-            className="w-full rounded-lg object-cover panel-card"
-          />
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-[0.8fr_1.2fr] md:items-center">
           <div>
-            <h2 className="heading-lg rule-accent text-primary">Our roadmap</h2>
-            <p className="mt-3 text-muted-foreground text-justify">
-              Darul-ilm Kent began with only five children in February 2017, in our home on Pagitt
-              Street, Chatham. Within two years, we had grown to 80 students, and our small
-              two-bedroom house could no longer accommodate our growing numbers. In February 2019,
-              we moved to a larger home in Chatham to keep pace with our growing madrasah.
+            <p className="eyebrow">Every Wednesday at 7:40pm</p>
+            <h2 className="heading-lg mt-3 text-primary">Spirituality Halaqa</h2>
+            <p className="mt-2 text-sm text-muted-foreground">Chatham Hill Masjid</p>
+          </div>
+          <div>
+            <p className="leading-7 text-muted-foreground">
+              For brothers, sisters and families. Spirituality is the starting point of our
+              community: when our hearts are linked to Allah, everything else follows. Everyone is
+              welcome.
             </p>
-            <p className="mt-4 text-muted-foreground text-justify">
-              As our numbers continued to rise, reaching 120 students by 2021, the space, classes,
-              traffic, and logistics of running a growing madrasah from a family two-bedroom home
-              had reached their limit. It was time for the next step.
-            </p>
-            <p className="mt-4 text-muted-foreground text-justify">
-              In May 2022, we relocated our educational facilities to the Chatham Hill Masjid, where
-              we continued to develop our facilities and serve the Medway community.
-            </p>
-            <p className="mt-4 text-muted-foreground text-justify">
-              Then, in May 2025, we opened a second site at Gillingham Mosque — bringing us to two
-              sites operating across Medway. Today we teach well over 300 students across both
-              branches, continuing the same foundation we started with: children who don't just
-              memorise their Dīn, but come to love it.
-            </p>
+            <a
+              href="/events"
+              className="mt-4 inline-flex font-semibold text-primary hover:underline"
+            >
+              See all events
+            </a>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 py-10 text-center">
-        <h2 className="heading-lg text-primary">Become a Pillar of the Madrasa</h2>
-        <p className="mx-auto mt-4 max-w-xl text-muted-foreground text-justify">
-          Not every one of us can stand in front of a classroom and teach — but every one of us can
-          be part of raising a generation grounded in their Islamic identity, who love Allah and His
-          Messenger ﷺ, and who are ready to become the leaders of tomorrow. When you donate, you
-          become part of that movement — reviving Islam in our community, one child at a time. Your
-          donation goes directly toward teachers’ wages, learning resources, and running two sites
-          across Medway.
+      <section className="band-navy">
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+          <div>
+            <p className="eyebrow text-accent">Every contribution matters</p>
+            <h2 className="heading-lg mt-3 text-navy-foreground">Your time is a form of ṣadaqah</h2>
+          </div>
+          <div>
+            <p className="leading-7 text-navy-foreground/85">
+              Whether you can give an hour a month or an evening a week, there is a place for you.
+              Pack food parcels, help us launch the soup kitchen, deliver leaflets to our
+              neighbours, join a litter pick or help with media.
+            </p>
+            <a href="/get-involved#volunteer" className="btn-pill mt-5 inline-flex">
+              Become a volunteer
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10 text-center">
+        <h2 className="heading-lg text-primary">Become a Pillar of the Community</h2>
+        <p className="mx-auto mt-4 max-w-4xl text-muted-foreground text-justify">
+          Not every one of us can sit with a struggling family, pack food parcels or guide a couple
+          through a difficult time, but every one of us can make it possible. When you give to
+          Darul-ilm Community, you help put food on the table for Muslim families going through
+          financial hardship, support marriages and families through their hardest seasons, launch
+          our weekly soup kitchen, and share the beauty of Islam with our neighbours. It all begins
+          with hearts connected to Allah and grows into service for everyone around us. Your ṣadaqah
+          stays right here in Medway, reaching people you may pass in the street.
         </p>
-        <div className="mt-8 flex justify-center gap-3">
-          <a
-            href="https://www.zeffy.com/en-GB/ticketing/darul-ilm-kent-2026-pillars"
-            target="_blank"
-            className="btn-pill"
-          >
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="/donate" className="btn-pill">
             Donate now
+          </a>
+          <a href="/zakat" className="btn-pill-ghost">
+            Give Zakat
           </a>
         </div>
       </section>
