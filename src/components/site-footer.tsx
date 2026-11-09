@@ -156,7 +156,7 @@ export function SiteFooter() {
             <li>
               <a
                 className="flex items-center gap-2 hover:text-accent"
-                href="https://www.youtube.com/@darul-ilmchatham4240"
+                href="https://www.youtube.com/@darul-ilmkent"
                 target="_blank"
                 rel="noreferrer"
               >

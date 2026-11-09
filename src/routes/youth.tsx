@@ -64,9 +64,11 @@ function Youth() {
           Programmes are in development. Register your interest and we will share updates when
           activities are ready.
         </p>
-        <a href="/get-involved#volunteer" className="btn-pill mt-5 inline-flex">
-          Register your interest
-        </a>
+        <div className="flex flex-col flex-wrap items-center gap-3 pt-6">
+          <a href="/get-involved#volunteer" className="btn-pill mt-5 inline-flex">
+            Register your interest
+          </a>
+        </div>
       </main>
       <SiteFooter />
     </div>

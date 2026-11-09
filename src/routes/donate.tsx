@@ -64,7 +64,7 @@ function Donate() {
             general donations.
           </p>
         </section>
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="flex flex-row flex-wrap justify-center gap-3 pt-6 mt-8">
           <a href="/contact#contact-form" className="btn-pill">
             Ask about giving
           </a>

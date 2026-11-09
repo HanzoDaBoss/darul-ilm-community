@@ -209,13 +209,15 @@ export function VolunteerSignupForm() {
           .
         </span>
       </label>
-      <button
-        type="submit"
-        disabled={submissionState === "sending"}
-        className="btn-pill disabled:cursor-not-allowed disabled:opacity-60"
-      >
-        {submissionState === "sending" ? "Sending..." : "Sign me up"}
-      </button>
+      <div className="flex flex-col flex-wrap items-center gap-3 pt-6">
+        <button
+          type="submit"
+          disabled={submissionState === "sending"}
+          className="btn-pill disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          {submissionState === "sending" ? "Sending..." : "Sign me up"}
+        </button>
+      </div>
       <p aria-live="polite" className="text-sm text-muted-foreground">
         {submissionState === "sent" &&
           "JazākAllāhu khayran for offering your time. A member of the team will be in touch."}

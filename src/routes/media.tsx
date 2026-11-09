@@ -50,6 +50,18 @@ function Media() {
           We produce content to protect our īmān, defend our faith and share the message of Islam
           with the world.
         </p>
+        <section className="panel-card mt-8 overflow-hidden" aria-label="Featured video">
+          <div className="aspect-video">
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube-nocookie.com/embed/qJKEPf28wwg"
+              title="Featured video from Darul-ilm Kent"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </section>
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {mediaWork.map(([title, body]) => (
             <article key={title} className="panel-card p-6">
@@ -58,9 +70,9 @@ function Media() {
             </article>
           ))}
         </div>
-        <div className="mt-10 flex flex-wrap gap-3">
+        <div className="mt-10 flex flex-row flex-wrap justify-center gap-3">
           <a
-            href="https://www.youtube.com/@darul-ilmchatham4240"
+            href="https://www.youtube.com/@darul-ilmkent"
             target="_blank"
             rel="noreferrer"
             className="btn-pill inline-flex items-center gap-2"

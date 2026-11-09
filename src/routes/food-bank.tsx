@@ -80,7 +80,7 @@ function FoodBank() {
                 request support from the food bank.
               </p>
               <a
-                className="btn-pill mt-6"
+                className="btn-pill mt-6 self-center"
                 href="https://forms.gle/GCZTh4unXUp9jwdS9"
                 target="_blank"
                 rel="noreferrer"
@@ -98,7 +98,7 @@ function FoodBank() {
                 through our Zeffy donation page.
               </p>
               <a
-                className="btn-pill-ghost mt-6"
+                className="btn-pill-ghost mt-6 self-center"
                 href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-28863"
                 target="_blank"
                 rel="noreferrer"

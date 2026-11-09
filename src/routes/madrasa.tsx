@@ -41,7 +41,7 @@ function Madrasa() {
             </p>
           </article>
         </div>
-        <div className="mt-8">
+        <div className="flex flex-col flex-wrap items-center gap-3 pt-6 mt-8">
           <a
             href="https://school.darulilmkent.org"
             className="btn-pill"

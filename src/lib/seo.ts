@@ -41,7 +41,7 @@ export const organisationSchema = {
     "Darul-ilm Community connects families across Medway with education, welfare, food support and spiritual gatherings.",
   email: "mailto:Info@darulilmchatham.com",
   sameAs: [
-    "https://www.youtube.com/@darul-ilmchatham4240",
+    "https://www.youtube.com/@darul-ilmkent",
     "https://www.instagram.com/darulilmchatham",
   ],
 };

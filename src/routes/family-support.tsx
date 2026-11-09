@@ -91,9 +91,11 @@ function FamilySupport() {
           To protect your privacy, please use the form to request a conversation only. Do not
           include personal or sensitive details in your initial message.
         </p>
-        <a href="/contact#contact-form" className="btn-pill mt-5 inline-flex">
-          Request a confidential conversation
-        </a>
+        <div className="flex flex-col flex-wrap items-center gap-3 pt-6">
+          <a href="/contact#contact-form" className="btn-pill inline-flex">
+            Request a confidential conversation
+          </a>
+        </div>
       </main>
       <SiteFooter />
     </div>

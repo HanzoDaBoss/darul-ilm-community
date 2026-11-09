@@ -37,6 +37,25 @@ function Dawah() {
           </p>
         </div>
 
+        <section className="mt-12">
+          <h2 className="font-display text-2xl uppercase text-primary">Ep.1 what is Islam?</h2>
+          <p className="mt-2 text-sm uppercase tracking-[0.18em] text-muted-foreground">
+            Intro to Islam for new Muslims
+          </p>
+          <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+            <div className="aspect-video w-full">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/6EoX61kUl-k?rel=0"
+                title="Ep.1 what is Islam? - Intro to Islam for new Muslims"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
         <section className="mt-12 grid gap-5 sm:grid-cols-2">
           {[
             [
@@ -57,7 +76,7 @@ function Dawah() {
               "Anyone curious about Islam is welcome to ask questions, visit the masjid and share a cup of tea. Get in touch to arrange a visit.",
             ],
           ].map(([title, body, upcoming]) => (
-            <article key={title} className="panel-card p-6">
+            <article key={String(title)} className="panel-card p-6">
               {upcoming && <p className="eyebrow">Coming soon</p>}
               <h2 className="font-display text-xl uppercase text-primary">{title}</h2>
               <p className="mt-3 text-sm leading-6 text-muted-foreground">{body}</p>
@@ -76,9 +95,11 @@ function Dawah() {
             Sūrat al-Naḥl 16:125
           </cite>
         </blockquote>
-        <a href="/contact" className="btn-pill mt-10 inline-flex">
-          Arrange a visit
-        </a>
+        <div className="flex flex-col flex-wrap items-center gap-3 pt-6">
+          <a href="/contact" className="btn-pill mt-10 inline-flex">
+            Arrange a visit
+          </a>
+        </div>
       </main>
       <SiteFooter />
     </div>

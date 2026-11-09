@@ -69,7 +69,7 @@ function Zakat() {
           Please contact us to request the support process or current giving details. Do not include
           personal or sensitive information in your first message.
         </p>
-        <div className="mt-5 flex flex-wrap gap-3">
+        <div className="flex flex-row flex-wrap justify-center gap-3 pt-6 mt-5">
           <a className="btn-pill" href="/contact">
             Apply for support, in confidence
           </a>

@@ -57,9 +57,11 @@ function Halaqas() {
           <p className="mt-4 text-sm text-muted-foreground">
             Seasonal programme details will be shared when confirmed.
           </p>
-          <a href="/events" className="btn-pill mt-6 inline-flex">
-            See all events
-          </a>
+          <div className="flex flex-col flex-wrap items-center gap-3 pt-6">
+            <a href="/events" className="btn-pill inline-flex">
+              See all events
+            </a>
+          </div>
         </section>
       </main>
       <SiteFooter />
