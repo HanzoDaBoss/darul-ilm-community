@@ -148,7 +148,7 @@ function Home() {
               cta: "FIND OUT MORE",
             },
             {
-              title: "CHM Food Bank",
+              title: "Food Bank",
               body: "Monthly food parcels for Muslim families going through financial difficulty, so no household faces a hard month alone.",
               to: "/food-bank" as const,
               cta: "GET SUPPORT",

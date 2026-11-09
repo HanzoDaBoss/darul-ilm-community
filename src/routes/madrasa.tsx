@@ -8,9 +8,8 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/madrasa")({
   head: () =>
     seoHead({
-      title: "Education | Darul-ilm Community",
-      description:
-        "Qur'an and Islamic studies for children, with adult class information coming soon.",
+      title: "Madrasa | Darul-ilm Community",
+      description: "Children's Qur'an and Islamic studies classes across Chatham and Gillingham.",
       path: "/madrasa",
     }),
   component: Madrasa,
@@ -21,39 +20,52 @@ function Madrasa() {
     <div className="min-h-screen">
       <SiteHeader />
       <PageBanner
-        eyebrow="Learning is where Darul-ilm started"
-        title="Education"
-        subtitle="Qur'an and the essentials of the Dīn, taught with care and a focus on character."
+        eyebrow="Learning and formation"
+        title="Madrasa"
+        subtitle="A strong foundation in Qur'an, Islamic studies and character for children across Medway."
       />
-      <main className="mx-auto max-w-3xl px-6 py-16">
-        <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
-          Learning is where Darul-ilm started, and it remains at the heart of everything we do. We
-          teach the Qur&apos;an and the essentials of the Dīn, helping learners grow in knowledge
-          and recite the Book of Allah beautifully and correctly.
-        </p>
-        <section className="mt-10 max-w-3xl border-y border-border py-7">
-          <p className="eyebrow">Children&apos;s madrasa · ages 5 to 16</p>
-          <h2 className="heading-lg mt-3 text-primary">Qur&apos;an and Islamic studies</h2>
-          <p className="mt-3 leading-7 text-muted-foreground">
-            Weekday evening and weekend classes. Full details and enrolment are handled by the
-            children&apos;s madrasa website.
-          </p>
+      <main className="mx-auto max-w-6xl px-6 py-16">
+        <div className="grid gap-6 md:grid-cols-2">
+          <article className="panel-card p-7">
+            <p className="eyebrow">Chatham</p>
+            <h2 className="heading-lg mt-4 text-primary">Chatham School</h2>
+            <p className="mt-4 text-muted-foreground">
+              Weekday and weekend classes at Chatham Hill Masjid for ages 5-16.
+            </p>
+          </article>
+          <article className="panel-card p-7">
+            <p className="eyebrow">Gillingham</p>
+            <h2 className="heading-lg mt-4 text-primary">Gillingham School</h2>
+            <p className="mt-4 text-muted-foreground">
+              Weekend Qur'an and Islamic studies classes at KMWA Mosque.
+            </p>
+          </article>
+        </div>
+        <div className="mt-8">
           <a
             href="https://school.darulilmkent.org"
-            className="btn-pill mt-5 inline-flex"
+            className="btn-pill"
             target="_blank"
             rel="noreferrer"
           >
-            Visit the madrasa website
+            Visit the Darul Ilm website
           </a>
+        </div>
+        <section className="mt-16 max-w-3xl">
+          <h2 className="heading-lg rule-accent text-primary">What children learn</h2>
+          <ul className="mt-6 grid gap-3 text-muted-foreground sm:grid-cols-2">
+            {[
+              "Qur'an recitation and memorisation",
+              "Aqidah, Fiqh, Sirah and Islamic history",
+              "Du'as, Akhlaaq and Adab",
+              "Confidence, discipline and service",
+            ].map((item) => (
+              <li key={item} className="border-l-2 border-accent pl-4">
+                {item}
+              </li>
+            ))}
+          </ul>
         </section>
-        <p className="max-w-3xl leading-7 text-muted-foreground">
-          Adult Islamic studies and Tajweed classes for adults and new Muslims are being confirmed.
-          We will share details when their days, times and topics are set.
-        </p>
-        <a href="/contact" className="btn-pill-ghost mt-5 inline-flex">
-          Ask about classes
-        </a>
       </main>
       <SiteFooter />
     </div>

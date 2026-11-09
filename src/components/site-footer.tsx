@@ -52,7 +52,7 @@ export function SiteFooter() {
             </li>
             <li>
               <Link className="hover:text-accent" to="/food-bank">
-                CHM Food Bank
+                Food Bank
               </Link>
             </li>
             <li>
